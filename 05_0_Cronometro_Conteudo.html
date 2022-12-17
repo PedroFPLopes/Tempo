@@ -1,0 +1,82 @@
+<!--
+	Pedro Lopes
+-->
+
+
+<!DOCTYPE html>  <!-- The <!DOCTYPE> declaration for HTML5 is: -->
+<html>
+
+<head>
+<title>TEMPORIZAÇÕES</title> <!-- Texto a apresentar no separador da pagina -->
+<meta charset="UTF-8"> <!-- The Unicode Character Sets -->
+
+<link rel="icon" type="image/x-icon" href="05_Media/stopwatch.ico">
+<link rel="stylesheet" href="05_0_Cronometro_Apresentacao.css">
+<script src="05_0_Cronometro_Comportamento.js"></script>
+<!-- * * * STYLES * * * -->
+<!--
+<style>
+
+</style>
+-->
+<!-- * * * STYLES * * * -->
+<!-- * * * * * * * * * * * * * * * * * * -->
+<!-- * * * SCRIPTS (and funtions) * * * -->
+<!-- * * * SCRIPTS * * * -->
+<!-- * * * * * * * * * * * * * * * * * * -->
+</head>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<hr>
+<!-- SEPARADOR: head / body -->
+<hr>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<body onload="buscaTEMPO()">
+<h2>Real Time Clock (RTC)</h2>
+<div id="txtRelogio" class="rtc">This is some text.</div>
+<hr>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<hr>
+<h1>Cronometro</h1>
+<div id="txtRelogio_3" class="rtc">0:00:00</div>
+<button onclick="arranca_TEMPO_3()">ARRANCA</button>
+<button onclick="pausa_TEMPO_3()">PAUSA</button>
+<button onclick="continua_TEMPO_3()">CONTINUA</button>
+<button onclick="marca_TEMPO_3()">MARCA</button>
+<button onclick="termina_TEMPO_3()">TERMINA</button>
+<button onclick="reinicia_TEMPO_3()">REINICIA</button>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<hr><hr>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<h1>Temporizador</h1>
+<label for="appt">Seleciona o tempo:</label>
+<input type="time" id="appt" name="appt" style="font-size:28px">
+<div id="txtTemporizador" class="rtc">0:00:00</div>
+<button onclick="arranca_TEMPORIZADOR()">ARRANCA</button>
+<button onclick="arranca_TEMPORIZADOR()">PAUSA</button>
+<button onclick="arranca_TEMPORIZADOR()">NOVO</button>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<hr><hr>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<h2> QUAL A DATA TEMPO AGORA</h2>
+<h6>PL: Clica no botao para ver a data-hora atual.</p>
+  <button onclick="getElementById('txtDATATEMPO').innerHTML=Date()">What day is today?</button>
+  <h3 id="txtDATATEMPO"></h3>
+</body>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<hr>
+<!-- SEPARADOR: body / footer--> 
+<hr> 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<footer>
+    <p><i>Tags</i> utilizadas: </p>
+    <p>Autor: Pedro Lopes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
+</html>
